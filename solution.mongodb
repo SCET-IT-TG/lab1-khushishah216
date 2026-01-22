@@ -1,0 +1,96 @@
+db = db.getSiblingDB("examDB");
+
+// Exercise 01
+db.students.insertOne({
+    name: "Hannibal Lecter",
+    department: "IT",
+    semester: 4,
+    mobile: "1234567890"
+  });
+
+db.students.insertOne({
+    name: "Tyrion Lannister",
+    department: "IT",
+    semester: 5,
+    mobile: "1134563290"
+  });
+
+db.students.insertOne({
+    name: "Jane Austen",
+    department: "CO",
+    semester: 7,
+    mobile: "1234567899"
+  });
+
+db.students.insertOne({
+    name: "Sylvia Plath",
+    department: "CO",
+    semester: 6,
+    mobile: "1234567891"
+  });
+
+// Exercise 02
+db.students.insertOne({
+    name: "Saicharan Vadapalli",
+    department: "IT",
+    semester: 3,
+    mobile: "123456782"
+  });
+
+// Exercise 03
+db.subjects.insertOne({
+    course_name: "IT",
+    subject_list: ["OS","DB","CNS"]
+  });
+
+
+// Exercise 04
+db.faculty.insertOne({
+  department: "IT",
+  teachers: [
+    {name: "Leslie Lamport", experience: 30},
+    {name: "Edsger Dijkstra", experience: 25},
+    {name: "Alan Turing", experience: 30},
+    {name: "Andrew Ng", experience: 12}
+  ]
+  });
+
+// Exercise 05
+db.students.insertOne({
+    _id: ObjectId(),
+    name: "Taylor Swift",
+    department: "IT",
+    semester: 1,
+    mobile: "8888888888"
+});
+
+// Exercise 06
+db.students.insertOne({
+    _id: ObjectId("6961039739e25d682b1e2630"),
+    name: "Christopher Nolan",
+    department: "EC",
+    semester: 4,
+    mobile: "1111122222"
+  });
+
+db.students.insertOne({
+    _id: ObjectId("6961039739e25d682b1e2630"),
+    name: "Kate Winslet",
+    department: "CO",
+    semester: 3,
+    mobile: "3333344444"
+  });
+// Exercise 07
+db.students.insert({
+    name: "Charlotte Bronte",
+    department: "IT",
+    semester: 5,
+    mobile: "9999999991"
+});
+
+db.students.insert({
+    name: "Cillian Murphy",
+    department: "Civil",
+    semester: 7,
+    mobile: "9999999992"
+});
